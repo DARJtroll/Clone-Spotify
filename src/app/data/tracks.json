@@ -1,0 +1,164 @@
+{
+    "data": [{
+            "_id": 1,
+            "name": "Getting Over",
+            "album": "One Love",
+            "cover": "https://jenesaispop.com/wp-content/uploads/2009/09/guetta_onelove.jpg",
+            "artist": {
+                "name": "David Guetta",
+                "nickname": "David Guetta",
+                "nationality": "FR"
+            },
+            "duration": {
+                "start": 0,
+                "end": 333
+            },
+            "url": "http://localhost:4200/track.mp3"
+        },
+        {
+            "_id": 2,
+            "name": "Anywhere for You",
+            "album": "Anywhere for You",
+            "cover": "https://upload.wikimedia.org/wikipedia/en/0/06/John_Martin_Anywhere_for_You.jpg?20140415062929",
+            "artist": {
+                "name": "Jhon Martin",
+                "nickname": "Jhon Martin",
+                "nationality": "EN"
+            },
+            "duration": {
+                "start": 0,
+                "end": 348
+            },
+            "url": "http://localhost:4200/track.mp3"
+        },
+        {
+            "_id": 3,
+            "name": "Hang Up(feat. Savoi)",
+            "album": "Hang Up(feat. Savoi)",
+            "cover": "https://i1.sndcdn.com/artworks-000330786156-oqql34-t500x500.jpg",
+            "artist": {
+                "name": "WRLD",
+                "nickname": "WRLD",
+                "nationality": "NETHERLANDS"
+            },
+            "duration": {
+                "start": 0,
+                "end": 348
+            },
+            "url": "http://localhost:4200/track.mp3"
+        },
+        {
+            "_id": 4,
+            "name": "Everybody Wants To Rule The World",
+            "album": "Songs From The Big Chair (Super Deluxe)",
+            "cover": "https://i.scdn.co/image/ab67616d0000b27322463d6939fec9e17b2a6235",
+            "artist": {
+                "name": "Tears For Fears",
+                "nickname": "Tear For Fears",
+                "nationality": "British"
+            },
+            "duration": {
+                "start": 0,
+                "end": 348
+            },
+            "url": "http://localhost:4200/track.mp3"
+        },
+        {
+            "_id": 5,
+            "name": "Sin aliento",
+            "album": "Musica de Contrabando",
+            "cover": "https://cdns-images.dzcdn.net/images/cover/e31b0d04c98b836bd3ec0f676849d109/500x500.jpg",
+            "artist": {
+                "name": "Ricardo Texido",
+                "nickname": "Danza Invisible",
+                "nationality": "Spanish"
+            },
+            "duration": {
+                "start": 0,
+                "end": 348
+            },
+            "url": "http://localhost:4200/track.mp3"
+        }
+        ,
+        {
+            "_id": 6,
+            "name": "Holding on",
+            "album": "NCS",
+            "cover": "https://i1.sndcdn.com/artworks-000336369039-crkm1u-t500x500.jpg",
+            "artist": {
+                "name": "Floatinurboat",
+                "nickname": "Floatinurboat",
+                "nationality": "American"
+            },
+            "duration": {
+                "start": 0,
+                "end": 348
+            },
+            "url": "http://localhost:4200/track.mp3"
+        },
+        {
+            "_id": 7,
+            "name": "Waking Up The Stars",
+            "album": "Waking Up The Stars",
+            "cover": "https://i1.sndcdn.com/artworks-000036119675-5ek987-t500x500.jpg",
+            "artist": {
+                "name": "Alex",
+                "nickname": "Alex M.O.R.P.H.",
+                "nationality": "EN"
+            },
+            "duration": {
+                "start": 0,
+                "end": 348
+            },
+            "url": "http://localhost:4200/track.mp3"
+        },
+        {
+            "_id": 8,
+            "name": "Strobe",
+            "album": "For Lack Of A Better Name",
+            "cover": "https://cdns-images.dzcdn.net/images/cover/d692f346174cdb895bf0dff826cb072b/500x500.jpg",
+            "artist": {
+                "name": "Joel Zimmerman",
+                "nickname": "deadmau5",
+                "nationality": "Canadian"
+            },
+            "duration": {
+                "start": 0,
+                "end": 348
+            },
+            "url": "http://localhost:4200/track.mp3"
+        },
+        {
+            "_id": 9,
+            "name": "Easy Love",
+            "album": "Brighter Days",
+            "cover": "https://i.scdn.co/image/ab67616d0000b2732b7e729dae69538addbd8e50",
+            "artist": {
+                "name": "Bruce Fielder",
+                "nickname": "Sigala",
+                "nationality": "English"
+            },
+            "duration": {
+                "start": 0,
+                "end": 348
+            },
+            "url": "http://localhost:4200/track.mp3"
+        },
+        {
+            "_id": 10,
+            "name": "BURN IT DOWN",
+            "album": "Living Things",
+            "cover": "https://i.redd.it/ksfz05p5otq11.png",
+            "artist": {
+                "name": "Linkin Park",
+                "nickname": "Linkin Park",
+                "nationality": "EN"
+            },
+            "duration": {
+                "start": 0,
+                "end": 348
+            },
+            "url": "http://localhost:4200/track.mp3"
+        }
+    ]
+}
