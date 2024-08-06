@@ -6,7 +6,7 @@ stages:
 
 install_dependencies:
   stage: install
-  image: node:12-alpine
+  image: node:18-alpine
   script:
     - npm install
   only:
@@ -19,14 +19,14 @@ install_dependencies:
         - package-lock.json
 
 build_app:
-  image: node:12-alpine
+  image: node:18-alpine
   stage: build
   script:
     - npm link @angular/cli@16.1.0
     - npm run build
   artifacts:
     paths:
-      - $CI_PROJECT_DIR/dist
+      - dist
   only:
   - master
   cache:
@@ -35,14 +35,14 @@ build_app:
         - package-lock.json
     paths:
       - node_modules
-      - $CI_PROJECT_DIR/dist
+      - dist
     policy: pull
 
 test_stage:
   image: markhobson/node-chrome:latest
   stage: test
   script:
-    - npm link @angular/cli@12.2.0
+    - npm link @angular/cli@16.1.0
     - npm test -- --browsers=ChromeHeadless --watch=false
   cache:
     key:
