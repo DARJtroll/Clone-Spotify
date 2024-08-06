@@ -22,7 +22,7 @@ build_app:
   image: node:12-alpine
   stage: build
   script:
-    - npm link @angular/cli@12.2.0
+    - npm link @angular/cli@16.1.0
     - npm run build
   artifacts:
     paths:
