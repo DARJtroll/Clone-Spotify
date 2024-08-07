@@ -1,7 +1,10 @@
+
 import { Component, ElementRef } from '@angular/core';
 import { ImgBrokenDirective } from './img-broken.directive';
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
+import { ComponentFixture,TestBed } from '@angular/core/testing'
+import { By } from '@angular/platform-browser'
+
+
 
 //Componente
 @Component({

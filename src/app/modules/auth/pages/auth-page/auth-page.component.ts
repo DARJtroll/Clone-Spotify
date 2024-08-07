@@ -38,8 +38,20 @@ export class AuthPageComponent implements OnInit{
     const body = this.formLogin.value
     this._authService.sendCredentials(body.email,body.password)
     //TODO Errores de 200 - 400
-    .subscribe(response=>{
+    .subscribe({
+      next:(response)=>{
+        const {tokenSession , data } = response
+        this.errorSesion = false;
+        this.cookie.set('token',tokenSession,4,'/');
+        this._router.navigate(['/tracks'])
+      },
+      error:(err) =>{
+        console.log("Error es => ",err);
+        this.errorSesion = true;
+      }
+    });
 
+    /*response=>{
       const {tokenSession , data } = response
       this.errorSesion = false;
       this.cookie.set('token',tokenSession,4,'/');
@@ -48,6 +60,6 @@ export class AuthPageComponent implements OnInit{
     err=>{ //Errores de 400 >=
       console.log("Error es => ",err);
       this.errorSesion = true;
-    });
+    }*/
   }
 }
