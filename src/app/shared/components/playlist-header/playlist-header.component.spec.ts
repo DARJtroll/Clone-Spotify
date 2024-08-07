@@ -8,8 +8,8 @@ describe('PlaylistHeaderComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PlaylistHeaderComponent]
-    });
+    imports: [PlaylistHeaderComponent]
+});
     fixture = TestBed.createComponent(PlaylistHeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

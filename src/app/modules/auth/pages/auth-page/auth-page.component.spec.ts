@@ -12,16 +12,16 @@ describe('AuthPageComponent', () => {
 
   beforeEach(async () => {
     TestBed.configureTestingModule({
-      declarations: [AuthPageComponent],
-      imports: [
+    imports: [
         HttpClientTestingModule,
         RouterTestingModule,
-      ],
-      schemas:[
+        AuthPageComponent,
+    ],
+    schemas: [
         CUSTOM_ELEMENTS_SCHEMA,
         NO_ERRORS_SCHEMA
-      ]
-    });
+    ]
+});
     fixture = TestBed.createComponent(AuthPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -9,12 +9,11 @@ describe('HistoryPageComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports:[HttpClientTestingModule],
-      declarations: [HistoryPageComponent],
-      schemas:[
+    imports: [HttpClientTestingModule, HistoryPageComponent],
+    schemas: [
         CUSTOM_ELEMENTS_SCHEMA,
-      ]
-    });
+    ]
+});
     fixture = TestBed.createComponent(HistoryPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

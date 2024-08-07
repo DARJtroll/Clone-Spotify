@@ -9,11 +9,11 @@ describe('FavoritesPageComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [FavoritesPageComponent],
-      schemas:[
+    imports: [FavoritesPageComponent],
+    schemas: [
         CUSTOM_ELEMENTS_SCHEMA,
-      ]
-    });
+    ]
+});
     fixture = TestBed.createComponent(FavoritesPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

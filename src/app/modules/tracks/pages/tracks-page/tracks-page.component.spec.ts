@@ -9,12 +9,11 @@ describe('TracksPageComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [TracksPageComponent],
-      imports: [HttpClientTestingModule],
-      schemas:[
+    imports: [HttpClientTestingModule, TracksPageComponent],
+    schemas: [
         CUSTOM_ELEMENTS_SCHEMA,
-      ]
-    });
+    ]
+});
     fixture = TestBed.createComponent(TracksPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

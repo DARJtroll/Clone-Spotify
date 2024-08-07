@@ -9,9 +9,8 @@ describe('SideBarComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SideBarComponent],
-      imports:[RouterTestingModule],
-    });
+    imports: [RouterTestingModule, SideBarComponent],
+});
     fixture = TestBed.createComponent(SideBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

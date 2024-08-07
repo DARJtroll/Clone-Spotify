@@ -4,24 +4,21 @@ import { CommonModule } from '@angular/common';
 import { HistoryRoutingModule } from './history-routing.module';
 import { HistoryPageComponent } from './pages/history-page/history-page.component';
 import { SearchComponent } from './components/search/search.component';
-import { SharedModule } from '@shared/shared.module';
+
 import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
-  declarations: [
-    HistoryPageComponent,
-    SearchComponent
-  ],
-  imports: [
+    imports: [
     CommonModule,
     HistoryRoutingModule,
-    SharedModule,
-    FormsModule
-  ],
-  schemas:[
-    CUSTOM_ELEMENTS_SCHEMA,
-    NO_ERRORS_SCHEMA
-  ]
+    FormsModule,
+    HistoryPageComponent,
+    SearchComponent
+],
+    schemas: [
+        CUSTOM_ELEMENTS_SCHEMA,
+        NO_ERRORS_SCHEMA
+    ]
 })
 export class HistoryModule { }

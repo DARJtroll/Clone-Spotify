@@ -1,11 +1,16 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TrackModel } from '@core/models/tracks.module';
 import { TrackService } from '@modules/tracks/services/track.service';
+import { OrderListPipe } from '../../pipe/order-list.pipe';
+import { ImgBrokenDirective } from '../../directives/img-broken.directive';
+import { NgFor, NgTemplateOutlet } from '@angular/common';
 
 @Component({
-  selector: 'app-playlist-body',
-  templateUrl: './playlist-body.component.html',
-  styleUrls: ['./playlist-body.component.css']
+    selector: 'app-playlist-body',
+    templateUrl: './playlist-body.component.html',
+    styleUrls: ['./playlist-body.component.css'],
+    standalone: true,
+    imports: [NgFor, NgTemplateOutlet, ImgBrokenDirective, OrderListPipe]
 })
 export class PlaylistBodyComponent implements OnInit{
   

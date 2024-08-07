@@ -9,12 +9,9 @@ describe('PlaylistBodyComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports:[HttpClientTestingModule],
-      declarations: [
-        PlaylistBodyComponent,
-        OrderListPipe
-      ]
-    });
+    imports: [HttpClientTestingModule, PlaylistBodyComponent,
+        OrderListPipe]
+});
     fixture = TestBed.createComponent(PlaylistBodyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -9,11 +9,11 @@ describe('HomePageComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [HomePageComponent],
-      schemas:[
+    imports: [HomePageComponent],
+    schemas: [
         CUSTOM_ELEMENTS_SCHEMA,
-      ]
-    });
+    ]
+});
     fixture = TestBed.createComponent(HomePageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

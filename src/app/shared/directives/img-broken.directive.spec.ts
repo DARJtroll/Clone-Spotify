@@ -8,7 +8,8 @@ import { By } from '@angular/platform-browser'
 
 //Componente
 @Component({
-  template:'<img appImgBroken class="TestingDirectiva" [src]="srcMock">'
+    template: '<img appImgBroken class="TestingDirectiva" [src]="srcMock">',
+    standalone: true
 })
 
 class TestComponent {
@@ -22,11 +23,9 @@ describe('ImgBrokenDirective', () => {
 
   beforeEach(()=>{
     TestBed.configureTestingModule({
-      declarations:[
-        TestComponent,
-        ImgBrokenDirective
-      ]
-    })
+    imports: [TestComponent,
+        ImgBrokenDirective]
+})
 
     fixture= TestBed.createComponent(TestComponent)
     component = fixture.componentInstance
